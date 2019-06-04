@@ -1,0 +1,29 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <span class="close" style="text-align: right">&times;</span>
+        <p>Zadzwoń teraz klikając w telefon<a class="nav-link"
+                                             href="tel:+48515296953"><img class="phone-icon" src="/images/icons/phone.png"
+                                                                          alt="phone icon contact telefon ikona kontakt"></a>
+        </p>
+        <p>lub zostaw nam swój numer telefonu, a oddzwonimy do Ciebie, jak tylko będziemy dostępni!</p>
+        <form action="/tel" method="post">
+            <table align="center">
+                <tr>
+                    <td>
+            +48 <input id="phone" class="input-group-sm" type="tel" name="phone" placeholder="xxxxxxxxx"
+                       pattern="[0-9]{9}" style="max-width: 50%" required><input type="submit" value="OK!">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+        <c:if test="${info != null}">
+            <p>Prośba o kontakt została już przekazana. Dziękujemy!</p>
+        </c:if>
+    </div>
+
+</div>

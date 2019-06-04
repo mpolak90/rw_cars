@@ -1,0 +1,116 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<div>
+    <a href="/logged/auctions">
+        <button class="btn-dark">Powrót</button>
+    </a>
+    <form action="/logged/auctions/edit" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="${car.id}">
+        <table class="w-auto">
+            <tr>
+                <th>nazwa pojazdu</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="name" class="input-group" value="${car.name}" required>
+                </td>
+            </tr>
+            <tr>
+                <th>cena</th>
+            </tr>
+            <tr>
+                <td><input type="number" min="0" name="price" class="input-group"
+                           value="${car.price}" required>
+                </td>
+            </tr>
+            <tr>
+                <th>rok produkcji</th>
+            </tr>
+            <tr>
+                <td><input type="number" min="1950" max="2019" name="production_year"
+                           value="${car.parameters.production_year}" required
+                           class="input-group"></td>
+            </tr>
+            <tr>
+                <th>przebieg</th>
+            </tr>
+            <tr>
+                <td><input type="number" min="0" name="mileage" class="input-group" required
+                           value="${car.parameters.mileage}"></td>
+            </tr>
+            <tr>
+                <th>pojemność skokowa</th>
+            </tr>
+            <tr>
+                <td><input type="number" name="capacity" class="input-group" required
+                           value="${car.parameters.capacity}"></td>
+            </tr>
+            <tr>
+                <th>moc</th>
+            </tr>
+            <tr>
+                <td><input type="number" name="power" class="input-group" required
+                           value="${car.parameters.power}"></td>
+            </tr>
+            <tr>
+                <th>rodzaj paliwa</th>
+            </tr>
+            <tr>
+                <td><select name="fuel_type" class="input-group" required>
+                    <c:if test="${car.parameters.fuel_type == 'benzyna' || car.parameters.fuel_type == null || car.parameters.fuel_type == ''}">
+                        <option value="benzyna" selected>benzyna</option>
+                        <option value="diesel">diesel</option>
+                        <option value="benzyna+LPG">benzyna+LPG</option>
+                    </c:if>
+                    <c:if test="${car.parameters.fuel_type == 'diesel'}">
+                        <option value="benzyna">benzyna</option>
+                        <option value="diesel" selected>diesel</option>
+                        <option value="benzyna+LPG">benzyna+LPG</option>
+                    </c:if>
+                    <c:if test="${car.parameters.fuel_type == 'benzyna+LPG'}">
+                        <option value="benzyna">benzyna</option>
+                        <option value="diesel">diesel</option>
+                        <option value="benzyna+LPG" selected>benzyna+LPG</option>
+                    </c:if>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <th>link do otomoto</th>
+            </tr>
+            <tr>
+                <td><input type="url" required name="otomoto_link" class="input-group"
+                           value="${car.otomoto_link}"></td>
+            </tr>
+            <tr>
+                <th>status</th>
+            </tr>
+            <tr>
+                <th>link do obrazu</th>
+            </tr>
+            <tr>
+                <td><input type="text" required name="image_link" class="input-group"
+                           value="${car.image_link}">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">lub</td>
+            </tr>
+            <tr>
+                <td><input type="file" name="image_upload" id="image_upload"
+                           accept="image/*" style="max-width: 275px">
+                </td>
+            </tr>
+            <input type="hidden" name="status"
+            <c:if test="${car.status == 'active' || car.status == '' || car.status == null}">
+                   value="active"
+            </c:if>
+            >
+            <tr>
+                <td align="right">
+                    <input type="submit" value="Zapisz" id="submit" align="right">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

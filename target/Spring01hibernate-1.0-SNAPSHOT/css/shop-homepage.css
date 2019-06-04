@@ -1,0 +1,297 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+
+@font-face
+{
+    font-family: Diploma;
+    src:url(/fonts/diploma.ttf);
+}
+
+@font-face
+{
+    font-family: Pricedow;
+    src:url(/fonts/pricedow.ttf);
+}
+
+@font-face
+{
+    font-family: Signpainter;
+    src:url(/fonts/signpainter.ttf);
+}
+
+body {
+    padding-top: 80px;
+    /*background-image: linear-gradient(120deg, #f9f0db 0%, #f5e794 100%);*/
+    background-image: url("/images/static/background.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+table.card-table {
+    width: 100%;
+    font-family: Signpainter, serif;
+    font-size: 20px;
+    background-color: #ffffc8;
+    text-align: center;
+    font-weight: bolder
+}
+
+table.card-table td, table.card-table th {
+    font-family: Signpainter, serif;
+}
+
+.counter {
+    height: 25px;
+    width: auto;
+}
+
+.article {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px 0 50px 0;
+    background-color: rgba(255, 255, 200, 0.8);
+    border-radius: 10px;
+}
+.article h1 {
+    font-family: Pricedow, serif;
+    text-align: center;
+    margin: 20px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.article p {
+    font-family: "Lato Medium", serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    color: #000;
+}
+
+.table-form {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.max-width {
+    max-width: 100%;
+}
+
+.bg-blue {
+    background-color: #37322f;
+    opacity: 0.95;
+}
+/* CSS for modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #37322f;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+    width: 80%;
+    max-width: 500px;
+    color: white;
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.myCard {
+    text-align: center;
+    opacity: 0.85;
+    font-family: Signpainter, serif;
+    background-color: #ffffc8;
+    border: 0;
+    border-radius: 0 0 4px 4px;
+}
+
+.card-title a{
+    color: #feff80;
+    font-family: Signpainter, serif;
+    font-size: 46px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.card-title-sold {
+    color: #feff80;
+    font-family: Signpainter, serif;
+    font-size: 36px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.myCard .card-title a:hover{
+    text-decoration: none;
+}
+
+.myCard .price {
+    color: #ac2228;
+    font-size: 40px;
+}
+
+.card-footer {
+    font-family: Pricedow, serif;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 30px;
+    height: 80px;
+    background-color: rgb(154, 140, 30);
+    border-radius: 0;
+}
+
+.card-footer:hover {
+    background-color: rgb(12, 84, 110);
+    text-decoration: none;
+    color: #f5e794;
+}
+
+.card-img-top {
+    min-height: 220px;
+    max-height: 220px;
+    width: 348px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+/*.card-img-top:hover {
+    opacity: 0.5;
+}*/
+
+.image-card {
+    position: relative;
+}
+
+.image-card:hover .card-img-top {
+    filter: blur(1px) brightness(150%);
+}
+
+.myButton {
+    background-color: #ffffff;
+    border: #f5e794;
+    border-radius: .25rem;
+    font-weight: bold;
+    color: black;
+    /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+    box-shadow: 1px 1px black;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.contact {
+    font-family: Pricedow, serif;
+    font-size: 28px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: pointer;
+}
+
+.nav-link {
+    display:inline-block;
+    color: #f5e794;
+    font-family: Pricedow, serif;
+    font-size:40px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-decoration:none;
+    /*width: 170px;*/
+    text-align: center;
+    padding: 0;
+}
+
+.nav-link:active {
+    position:relative;
+    top:1px;
+    color: #f5e794;
+}
+
+.nav-item :hover{
+    width: 100%;
+    max-width: 250px;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 60px solid #f5e794;
+}
+
+.nav-item {
+    text-align: center;
+}
+
+.bar-menu a {
+    font-family: Pricedow, serif;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size:30px;
+    text-decoration:none;
+    color: #37322f;
+}
+
+.bar-menu a:hover {
+    color: #f5e794;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.bar-menu {
+    text-align: center;
+}
+
+.title {
+    font-family: Pricedow, serif;
+    font-size: 100px;
+    text-align: center;
+    color: #f5e794;
+    text-shadow: 2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.sold {
+    filter: sepia(70%);
+}
+
+.phone-icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}

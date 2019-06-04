@@ -1,0 +1,19 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<h1 class="my-4">O nas:</h1>
+<hr>
+<div class="bar-menu my-4">
+    <table class="w-100">
+        <tr>
+            <td><a href="/about">Zespół</a></td>
+        </tr>
+        <tr>
+            <td><a href="/about/sold">Sprzedane samochody</a></td>
+        </tr>
+        <tr>
+            <td><a href="/about/philosophy">Filozofia firmy</a></td>
+        </tr>
+        <tr>
+            <td><a href="/contact">Kontakt</a></td>
+        </tr>
+    </table>
+</div>

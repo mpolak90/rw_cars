@@ -1,0 +1,15 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<div class="bar-menu my-4">
+    <h1 style="display: none" id="current">offers</h1>
+    <table class="w-100">
+        <tr>
+            <td><a href="/logged/auctions">Spis ofert</a></td>
+        </tr>
+        <tr>
+            <td><a href="/logged/auctions/new">Dodaj nową</a></td>
+        </tr>
+        <tr>
+            <td><a href="/logged/auctions/sold">Sprzedane</a></td>
+        </tr>
+    </table>
+</div>

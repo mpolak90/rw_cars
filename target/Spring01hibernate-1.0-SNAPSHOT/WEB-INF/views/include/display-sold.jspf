@@ -1,0 +1,42 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<div class="col-lg-4 col-md-6 mb-4">
+    <div class="card myCard h-100 sold">
+        <div class="image-card">
+            <a><img class="card-img-top" src="${car.image_link}"
+                                               alt="car image offer samochód obraz">
+            </a>
+            <div style="position:absolute; bottom: 0; right: 10px" class="card-title-sold"><a>${car.name}</a></div>
+        </div>
+        <div class="card-body">
+            <h5 class="price"><span class="number" style="text-decoration: line-through">${car.price}</span> ,-</h5>
+            <p class="card-text">
+            <table class="card-table">
+
+                <tr>
+                    <th colspan="2" style="width: 33%"><img src="/images/icons/year.png" alt="production year icon"
+                                                            class="icon"></th>
+                    <th colspan="2" style="width: 33%"><img src="/images/icons/horsepower.png"
+                                                            alt="power horsepower car" class="icon"></th>
+                    <th colspan="2" style="width: 33%"><img src="/images/icons/engine.png"
+                                                            alt="engine capacity pojemność silnika icon"
+                                                            class="icon"></th>
+                </tr>
+                <tr>
+                    <td colspan="2">${car.parameters.production_year}</td>
+                    <td colspan="2"><span class="number">${car.parameters.power}</span> KM</td>
+                    <td colspan="2"><span class="number">${car.parameters.capacity}</span> cm<sup>3</sup></td>
+                </tr>
+                <tr>
+                    <th colspan="3"><img src="/images/icons/fuel.png" alt="fuel type rodzaj paliwa icon"
+                                         class="icon"></th>
+                    <th colspan="3"><img src="/images/icons/milage.png" alt="milage przebieg samochodu car icon"
+                                         class="icon"></th>
+                </tr>
+                <tr>
+                    <td colspan="3">${car.parameters.fuel_type}</td>
+                    <td colspan="3"><span class="number">${car.parameters.mileage}</span> km</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<div class="bar-menu my-4">
+    <h1 style="display: none" id="current">users</h1>
+    <table class="w-100">
+        <tr>
+            <td><a href="/admin/users">lista użytkowników</a></td>
+        </tr>
+        <tr>
+            <td><a href="/admin/users/new">dodaj</a></td>
+        </tr>
+        <tr>
+            <td><a href="/admin/users/blocked">zablokowani</a></td>
+        </tr>
+    </table>
+</div>

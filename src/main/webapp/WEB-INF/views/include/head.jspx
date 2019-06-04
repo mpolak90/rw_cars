@@ -1,0 +1,19 @@
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description"
+          content="Sprzedaż samochodów używanch, sprowadzanych zza granicy. Sprzedawcy z doświadczaniem, satysfakcja klienta."/>
+    <meta name="author" content="Mateusz Polak"/>
+
+    <title>Holender płakał, jak sprzedawał</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/shop-homepage.css" rel="stylesheet"/>
+
+    <link rel="shortcut icon" href="/images/favicon.ico"/>
+
+</head>

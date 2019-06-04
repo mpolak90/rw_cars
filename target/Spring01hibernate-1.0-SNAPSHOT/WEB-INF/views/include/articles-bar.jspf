@@ -1,0 +1,27 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<div class="bar-menu my-4">
+    <h1 style="display: none" id="current">articles</h1>
+    <table class="w-100">
+        <tr>
+            <td><a href="/admin/articles">zespół</a></td>
+        </tr>
+        <tr>
+            <td><a href="/admin/articles/1">sprzedane</a></td>
+        </tr>
+        <tr>
+            <td><a href="/admin/articles/2">filozofia</a></td>
+        </tr>
+        <tr>
+            <td><a href="/admin/articles/3">zamówienia</a></td>
+        </tr>
+        <tr>
+            <td><a href="/admin/articles/4">kontakt</a></td>
+        </tr>
+        <tr>
+            <td><a href="/admin/rusks">suchary</a></td>
+        </tr>
+        <tr>
+            <td><a href="/admin/instruction">instrukcja</a></td>
+        </tr>
+    </table>
+</div>
